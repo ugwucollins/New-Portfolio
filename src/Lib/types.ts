@@ -24,6 +24,7 @@ export type CardProp = {
   title: string;
   message: string;
   index?: Number | boolean;
+  className?: string;
   selectIndexCard?: Number | boolean;
 };
 export type ButtonProp = {

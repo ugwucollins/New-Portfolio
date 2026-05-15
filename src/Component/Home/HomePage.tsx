@@ -6,7 +6,7 @@ const HomeCore = lazy(() => import("./HomeCore"));
 const FooterHome = lazy(() => import("./FooterHome"));
 const HomePage = () => {
   return (
-    <Container className="w-full relative  py-12">
+    <Container className="w-full overflow-hidden relative  py-12">
       {/* Hero Section */}
       <HomeBanner />
       {/* Hero Section */}

@@ -3,8 +3,8 @@ import type { AboutCardProp, CardProp, MenuProp, TechProp } from "../Lib/types";
 import { DiNodejs, DiReact } from "react-icons/di";
 import { BiCode, BiWorld } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { BsBackpack, BsJavascript } from "react-icons/bs";
-import { SiExpress } from "react-icons/si";
+import { BsBackpack, BsJavascript, BsPhoneFill } from "react-icons/bs";
+import { SiExpress, SiVite } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { PiFrameCorners } from "react-icons/pi";
 
@@ -71,6 +71,7 @@ export const quicks = [
     ],
   },
 ];
+
 export const socials = [
   {
     title: "socials",
@@ -146,6 +147,37 @@ export const expertiseArray: CardProp[] = [
     title: "Performance",
     message:
       "Optimizing every byte for lightning-fast load times and smooth 60fps.",
+    icon: <IoFlash />,
+  },
+];
+export const expertiseSkillsArray: CardProp[] = [
+  {
+    title: "Frontend Development",
+    message:
+      "Building responsive and performant web application using React,Next.js and  other modern javascript frameworks with perfect designs",
+    icon: <SiVite />,
+  },
+  {
+    title: "Responsive Design",
+    message:
+      "crafting mobile-first responsive interface that  Fluid layouts which maintain pixel-perfection across all device sizes for user Experiences.",
+    icon: <BsPhoneFill />,
+  },
+  {
+    title: "custom components",
+    message:
+      "Engaging in reliable and scaleable components liberies and design system that maintain constency.",
+    icon: <BiCode />,
+  },
+  {
+    title: "Interactive UI",
+    message: "Engaging animations and micro-interactions that guide users.",
+    icon: <BiWorld />,
+  },
+  {
+    title: "Performance optimization",
+    message:
+      "Optimizing web applications for speed and efficiency through codes .Optimizing every byte for lightning-fast load times and smooth 60fps.",
     icon: <IoFlash />,
   },
 ];

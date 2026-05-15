@@ -1,8 +1,17 @@
 import type { CardProp } from "../Lib/types";
 
-const Card = ({ index, icon, title, message, selectIndexCard }: CardProp) => {
+const Card = ({
+  index,
+  icon,
+  title,
+  message,
+  className,
+  selectIndexCard,
+}: CardProp) => {
   return (
-    <div className="w-full max-sm:max-w-3xl max-w-110">
+    <div
+      className={`w-full   ${className ? className : "max-sm:max-w-3xl max-w-110"}`}
+    >
       <div
         className={`p-8 bg-portfolio-card border border-portfolio-border rounded-2xl hover:border-portfolio-primary hover:cursor-pointer transition hover:drop-shadow-2xl hover:shadow-portfolio-primary/40 group ${index === selectIndexCard ? "shadow drop-shadow-2xl shadow-portfolio-primary/40" : null}`}
       >

@@ -18,14 +18,14 @@ const AboutHeader = () => {
   }, []);
 
   return (
-    <div className="w-full py-40">
+    <div className="w-full py-40 overflow-hidden">
       <div className="w-full flex justify-center items-center gap-6 gap-y-20 flex-row max-[1000px]:flex-col-reverse">
         <div
           data-aos="zoom-in-right"
           className="w-full flex justify-start pl-18 max-sm:pl-0 items-center lg:w-1/2 relative"
         >
-          <div className="w-full size-90 relative">
-            <div className="size-90 relative border-2 border-portfolio-primary dark:rounded-full rounded-2xl bg-cyan-800/70 flex justify-center items-center overflow-hidden shadow-xl drop-shadow-2xl shadow-portfolio-border dark:shadow-portfolio-primary">
+          <div className="w-full max-w-100 h-auto relative max-sm:max-w-90 pb-5 dark:pb-8">
+            <div className="w-full size-90 relative border-2 border-portfolio-primary dark:rounded-full rounded-2xl bg-cyan-800/70 flex justify-center items-center overflow-hidden shadow-xl drop-shadow-2xl shadow-portfolio-border dark:shadow-portfolio-primary">
               <img
                 loading="lazy"
                 src={assets.profile1}
@@ -33,7 +33,7 @@ const AboutHeader = () => {
                 alt="profile photo"
               />
             </div>
-            <div className="absolute bottom-0 dark:right-10 max-md:right-20 right-2">
+            <div className="absolute bottom-0 dark:right-0 max-md:right-0 right-0">
               <div className="w-auto bg-portfolio-bg px-2 items-center py-1 font-bold rounded-xl text-[12px] flex justify-center uppercase dark:text-portfolio-primary shadow drop-shadow-2xl">
                 <BsDot size={30} className="text-portfolio-primary" />
                 Available for work
@@ -54,7 +54,7 @@ const AboutHeader = () => {
             <h1
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="w-full text-[min(20vw,60px)] font-bold"
+              className="w-full text-[min(20vw,60px)] max-[350px]:text-[min(20vw,40px)] font-bold"
             >
               frontend developer &
               <span className="text-portfolio-primary">
