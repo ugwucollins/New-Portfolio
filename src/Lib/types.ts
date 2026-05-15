@@ -4,6 +4,16 @@ export type MenuProp = {
   path?: string;
   title: string;
 };
+export type SkillsProp = {
+  className?: string;
+  title: string;
+  width: string;
+};
+export type SkillsNumProp = {
+  className?: string;
+  title: string;
+  text: string;
+};
 export type TechProp = {
   icon: ReactElement;
   title: string;

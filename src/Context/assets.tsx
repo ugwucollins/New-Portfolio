@@ -8,11 +8,11 @@ import { SiExpress } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { PiFrameCorners } from "react-icons/pi";
 
-const profile = "/public/profile.png";
-const avater = "/public/avater.png";
-const profile1 = "/public/profile1.png";
-const hero = "/public/hero.jpg";
-const hero1 = "/public/hero1.jpg";
+const profile = "/profile.png";
+const avater = "/avater.png";
+const profile1 = "/profile1.png";
+const hero = "/hero.jpg";
+const hero1 = "/hero1.jpg";
 export const assets = {
   profile,
   profile1,
