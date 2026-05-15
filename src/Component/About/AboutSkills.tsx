@@ -24,7 +24,7 @@ const AboutSkills = () => {
           );
         })}
       </div>
-      <div className="flex flex-row w-full gap-4 py-24 px-5 justify-around items-center flex-wrap">
+      <div className="flex flex-row w-full gap-4 py-24 px-5 justify-around gap-y-10 items-center flex-wrap">
         {AboutSkillsArrayNum.map((skill, index: number) => {
           const even = index % 2 === 0;
           return (

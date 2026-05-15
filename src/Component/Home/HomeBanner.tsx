@@ -82,6 +82,7 @@ const HomeBanner = () => {
         <div className="bg-portfolio-card border border-portfolio-border p-2 rounded-2xl shadow-2xl overflow-hidden">
           <img
             src={assets.hero1}
+           loading='lazy'
             alt="Code Mockup"
             className="rounded-xl w-full"
           />

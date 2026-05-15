@@ -24,17 +24,20 @@ const AboutHeader = () => {
           data-aos="zoom-in-right"
           className="w-full flex justify-start pl-18 max-sm:pl-0 items-center lg:w-1/2 relative"
         >
-          <div className="size-90 border-2 border-portfolio-primary dark:rounded-full rounded-2xl bg-cyan-800/70 flex justify-center items-center overflow-hidden shadow-xl drop-shadow-2xl shadow-portfolio-border dark:shadow-portfolio-primary relative">
-            <img
-              src={assets.profile1}
-              className=" object-contain pt-10"
-              alt="profile photo"
-            />
-          </div>
-          <div className="absolute bottom-0 dark:right-35 max-md:right-20 right-50">
-            <div className="w-auto bg-portfolio-bg px-2 items-center py-1 font-bold rounded-xl text-[12px] flex justify-center uppercase dark:text-portfolio-primary shadow drop-shadow-2xl">
-              <BsDot size={30} className="text-portfolio-primary" />
-              Available for work
+          <div className="w-full size-90 relative">
+            <div className="size-90 relative border-2 border-portfolio-primary dark:rounded-full rounded-2xl bg-cyan-800/70 flex justify-center items-center overflow-hidden shadow-xl drop-shadow-2xl shadow-portfolio-border dark:shadow-portfolio-primary">
+              <img
+                loading="lazy"
+                src={assets.profile1}
+                className=" object-contain pt-10"
+                alt="profile photo"
+              />
+            </div>
+            <div className="absolute bottom-0 dark:right-10 max-md:right-20 right-2">
+              <div className="w-auto bg-portfolio-bg px-2 items-center py-1 font-bold rounded-xl text-[12px] flex justify-center uppercase dark:text-portfolio-primary shadow drop-shadow-2xl">
+                <BsDot size={30} className="text-portfolio-primary" />
+                Available for work
+              </div>
             </div>
           </div>
         </div>
