@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { lazy, useEffect } from "react";
 import Contact from "./Pages/Contact";
 import Aos from "aos";
+import Projects from "./Pages/Projects";
 const Layout = lazy(() => import("./LayOut"));
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "skills", element: <Skills /> },
       { path: "contact", element: <Contact /> },
+      { path: "projects", element: <Projects /> },
       { path: "*", element: <NotFoundPage /> },
     ],
   },

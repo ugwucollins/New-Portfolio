@@ -2,7 +2,7 @@ import type { ButtonProp } from "../Lib/types";
 
 const Button = ({ type, className, icon, title, onClick }: ButtonProp) => {
   return (
-    <div>
+    <>
       <button
         onClick={onClick}
         className={
@@ -18,7 +18,7 @@ const Button = ({ type, className, icon, title, onClick }: ButtonProp) => {
         {icon ? icon : null}
         {title}
       </button>
-    </div>
+    </>
   );
 };
 

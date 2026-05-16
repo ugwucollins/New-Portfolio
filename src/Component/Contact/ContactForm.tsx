@@ -26,18 +26,18 @@ const ContactForm = () => {
     setValue("message", "");
   }
   const onSubmit: SubmitHandler<ContactValues> = async (data) => {
-    console.log(data);
-
     await emailjs
       .sendForm(
-        "service_gjs48dc",
-        "template_0130fgk",
+        "service_bqe3x0p",
+        "template_s2uyzcy",
+        // "template_0130fgk",
         form.current,
         "onBgeaCnBkO6NiHur",
       )
       .then(
         (result) => {
           console.log(result.text);
+          console.log(data);
           empty();
         },
         (error) => {
@@ -64,14 +64,14 @@ const ContactForm = () => {
               error={errors.name?.message}
               label="fullName"
               placeholder="Full Name"
-              name="user_name"
+              name="name"
             />
             <InputField
               value={register("phoneNumber")}
               type="text"
               error={errors.phoneNumber?.message}
               label="phone Number"
-              name="user_phonenumber"
+              name="phone"
               placeholder="phone number"
             />
           </div>
@@ -80,7 +80,7 @@ const ContactForm = () => {
             type="email"
             error={errors.email?.message}
             label="email"
-            name="user_email"
+            name="email"
             placeholder="example@gmail.com"
           />
           <InputField
@@ -89,7 +89,7 @@ const ContactForm = () => {
             error={errors.subject?.message}
             label="subject"
             placeholder="Project ..."
-            name="user_subject"
+            name="subject"
           />
           <TextAreaField
             value={register("message")}
