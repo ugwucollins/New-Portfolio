@@ -1,22 +1,12 @@
 import { BiCode } from "react-icons/bi";
 import Button from "../../Context/Button";
 import { MdEmail, MdMessage } from "react-icons/md";
-import { useEffect, type ReactElement } from "react";
-import Aos from "aos";
+import { type ReactElement } from "react";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiSpeedtest } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 
 const FooterHome = () => {
-  useEffect(() => {
-    Aos.init({
-      // offset: 200,
-      duration: 600,
-      easing: "ease-in-out",
-      delay: 100,
-      once: true,
-    });
-  }, []);
   const router = useNavigate();
   return (
     <div className="w-full py-15 mt-0 shadow-xl drop-shadow-2xl shadow-portfolio-primary/40 mb-20 px-8 max-sm:px-0 max-sm:pl-4 bg-portfolio-primary rounded-2xl">

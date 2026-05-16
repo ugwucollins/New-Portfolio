@@ -4,19 +4,8 @@ import Header from "../../Context/Header";
 import { BiUser } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
-import { useEffect } from "react";
-import Aos from "aos";
 
 const AboutHeader = () => {
-  useEffect(() => {
-    Aos.init({
-      once: true,
-      duration: 600,
-      easing: "ease-in-out",
-      delay: 2,
-    });
-  }, []);
-
   return (
     <div className="w-full py-40 overflow-hidden">
       <div className="w-full flex justify-center items-center gap-6 gap-y-20 flex-row max-[1000px]:flex-col-reverse">
@@ -82,11 +71,11 @@ const AboutHeader = () => {
               >
                 <div className="flex text-base pt-4 gap-2 font-semibold items-center">
                   <MdEmail className="text-portfolio-primary  text-2xl" />
-                  <span className=" opacity-50">hello@developer.io</span>
+                  <span className=" opacity-50">ugwucollins027@gamil.com</span>
                 </div>
                 <div className="flex justify-center text-base gap-2 font-semibold items-center">
                   <IoLocation className="text-portfolio-primary text-2xl" />
-                  <span className=" opacity-50">Austin, Texas (CST)</span>
+                  <span className=" opacity-50">Owerri, Nigeria </span>
                 </div>
               </div>
             </div>

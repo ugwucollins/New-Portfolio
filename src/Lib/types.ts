@@ -43,3 +43,22 @@ export type AboutCardProp = {
   desc: string;
   tech: [string] | string[];
 };
+
+export type InputProps = {
+  value: any;
+  label: string;
+  type: string;
+  error: string | any;
+  placeholder: string;
+  className?: string;
+  name?: string;
+};
+
+export type TextAreaProps = {
+  value: any;
+  label: string;
+  error: string | any;
+  name?: string;
+  className?: string;
+  placeholder: string;
+};

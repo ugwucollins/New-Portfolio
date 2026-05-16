@@ -1,18 +1,8 @@
-import { useEffect } from "react";
 import { assets } from "../../Context/assets";
 import Button from "../../Context/Button";
-import Aos from "aos";
 import { useNavigate } from "react-router-dom";
 
 const HomeBanner = () => {
-  useEffect(() => {
-    Aos.init({
-      once: true,
-      duration: 600,
-      easing: "ease-in-out",
-      delay: 2,
-    });
-  }, []);
   const router = useNavigate();
   {
     /* Hero Section */
@@ -82,7 +72,7 @@ const HomeBanner = () => {
         <div className="bg-portfolio-card border border-portfolio-border p-2 rounded-2xl shadow-2xl overflow-hidden">
           <img
             src={assets.hero1}
-           loading='lazy'
+            loading="lazy"
             alt="Code Mockup"
             className="rounded-xl w-full"
           />

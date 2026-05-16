@@ -1,17 +1,7 @@
-import Aos from "aos";
-import { useEffect } from "react";
 import SkillsLine, { SkillsNum } from "../../Context/SkillsLine";
 import type { SkillsNumProp, SkillsProp } from "../../Lib/types";
 
 const AboutSkills = () => {
-  useEffect(() => {
-    Aos.init({
-      once: true,
-      duration: 600,
-      easing: "ease-in-out",
-      delay: 2,
-    });
-  }, []);
   return (
     <div className="w-full relative transition-all duration-150 py-24">
       <div

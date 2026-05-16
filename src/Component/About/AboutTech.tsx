@@ -1,17 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AboutCardArray } from "../../Context/assets";
 import AboutCard from "./AboutCard";
-import Aos from "aos";
 
 const AboutTech = () => {
-  useEffect(() => {
-    Aos.init({
-      once: true,
-      duration: 600,
-      easing: "ease-in-out",
-      delay: 2,
-    });
-  }, []);
   const [selectIndex, setSelectIndex] = useState(1);
 
   function handleIndex(num: any) {

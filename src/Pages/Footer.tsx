@@ -73,13 +73,13 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h1 className="font-bold uppercase">Contact</h1>
-            <div className="flex text-base pt-4 gap-2 font-semibold opacity-60 items-center">
+            <div className="flex text-base py-4 gap-2 font-semibold opacity-60 items-center">
               <MdEmail className="text-portfolio-primary  text-2xl" />
-              hello@developer.io
+              ugwucollins027@gmail.com
             </div>
             <div className="flex text-base gap-2 opacity-60 font-semibold items-center">
               <CiLocationOn className="text-portfolio-primary text-2xl" />
-              Austin, Texas (CST)
+              Owerri, Nigeria
             </div>
           </div>
         </div>

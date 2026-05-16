@@ -1,18 +1,8 @@
-import { useEffect, useState, type ReactElement } from "react";
+import { useState, type ReactElement } from "react";
 import { expertiseArray, tech } from "../../Context/assets";
-import Aos from "aos";
 import Card from "../../Context/Card";
 
 const HomeCore = () => {
-  useEffect(() => {
-    Aos.init({
-      once: true,
-      duration: 500,
-      easing: "ease-in-out",
-      delay: 2,
-    });
-  }, []);
-
   const [selectIndex, setSelectIndex] = useState(3);
   const [selectIndexCard, setSelectIndexCard] = useState(1);
   function handleIndex(num: any | number) {
