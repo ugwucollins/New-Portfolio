@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./Pages/Footer";
 import Navbar from "./Component/navBar/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 function Layout() {
   return (
@@ -16,6 +17,7 @@ function Layout() {
         {/* <p>© 2024 My React App</p> */}
         <Footer />
       </footer>
+      <Analytics />
     </div>
   );
 }
