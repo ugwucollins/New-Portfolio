@@ -42,9 +42,8 @@ const ProjectCard = () => {
                 : null,
           )
           .map((card: any, index: number) => {
-            console.log(activeFilter.includes(card.categroy));
-
-            return <Card key={index} data={card} />;
+            const even = index % 2 === 0;
+            return <Card key={index} even={even} data={card} />;
           })}
         {/* <Card /> */}
         <LastCard />
@@ -97,7 +96,7 @@ function LastCard() {
   );
 }
 // type CardProp = {};
-function Card({ data }: { data: any }) {
+function Card({ data, even }: { data: any; even: boolean }) {
   const [selectIndex, setSelectIndex] = useState(0);
   const [loading, setLoading] = useState<boolean>(true);
   function handle(num: any) {
@@ -154,7 +153,9 @@ function Card({ data }: { data: any }) {
             ))}
           </div>
 
-          <div className="w-full flex flex-row max-sm:flex-col-reverse gap-y-4 gap-3 px-2">
+          <div
+            className={`w-full flex flex-row  gap-y-4 gap-3 px-2 ${even ? "max-sm:flex-col-reverse" : "max-sm:flex-col"}`}
+          >
             <Link to={data?.path} className="w-full">
               <Button
                 title="Live Demo"
