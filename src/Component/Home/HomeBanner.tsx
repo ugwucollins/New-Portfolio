@@ -37,7 +37,7 @@ const HomeBanner = () => {
         <div className="flex flex-row flex-wrap w-full gap-4 pt-4">
           <Button
             title="View Projects"
-            onClick={() => router("/project", { replace: true })}
+            onClick={() => router("/projects", { replace: true })}
             type="blue"
           />
           <Button
