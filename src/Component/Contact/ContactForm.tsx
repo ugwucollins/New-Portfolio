@@ -43,10 +43,10 @@ const ContactForm = () => {
           empty();
         },
         (error) => {
+          console.log(error);
           console.log(error.text);
           setError("root", {
             message: "Failed to send message. Please try again later.",
-            type: "error",
           });
         },
       );
@@ -101,6 +101,12 @@ const ContactForm = () => {
             placeholder="Message"
           />
         </div>
+
+        {errors.root && (
+          <p className="text-red-500 text-base font-semibold mt-2">
+            {errors.root.message}
+          </p>
+        )}
         <div className="w-full py-8">
           <Button
             title={isSubmitting ? "sending..." : "send message"}
