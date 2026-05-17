@@ -19,9 +19,11 @@ const ContactForm = () => {
   } = useForm({
     resolver: zodResolver(ContactSchema),
   });
+
   function empty() {
     setValue("email", "");
     setValue("name", "");
+    setValue("phoneNumber", "");
     setValue("subject", "");
     setValue("message", "");
   }
