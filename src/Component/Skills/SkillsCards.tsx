@@ -109,7 +109,19 @@ export default SkillsCards;
 
 export const SkillsArray: SkillsProp[] = [
   {
+    title: "HTML5",
+    width: "90%",
+  },
+  {
+    title: "Css  (Native)",
+    width: "95%",
+  },
+  {
     title: "React.js",
+    width: "90%",
+  },
+  {
+    title: "JavaScript",
     width: "90%",
   },
   {
@@ -118,17 +130,12 @@ export const SkillsArray: SkillsProp[] = [
   },
   {
     title: "TypeScript",
-    width: "80%",
+    width: "85%",
   },
   {
     title: "Tailwindcss css",
     width: "98%",
   },
-  {
-    title: "HTML5",
-    width: "90%",
-  },
-
   {
     title: "React native",
     width: "75%",
@@ -138,7 +145,7 @@ export const SkillsArray: SkillsProp[] = [
 export const SkillsArrayBack: SkillsProp[] = [
   {
     title: "node.js",
-    width: "70%",
+    width: "85%",
   },
   {
     title: "express.js",
