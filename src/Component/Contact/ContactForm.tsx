@@ -38,13 +38,12 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
           console.log(data);
           empty();
         },
         (error) => {
-          console.log(error);
-          console.log(error.text);
+          console.log(error.message);
           setError("root", {
             message: "Failed to send message. Please try again later.",
           });
